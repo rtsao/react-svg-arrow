@@ -1,0 +1,24 @@
+{
+  "name": "react-svg-arrow",
+  "version": "0.1.0",
+  "description": "A React component for tooltip and popover arrows",
+  "author": "Ryan Tsao <ryan.j.tsao@gmail.com>",
+  "main": "index.js",
+  "homepage": "https://github.com/rtsao/react-svg-arrow",
+  "repository": "git@github.com:rtsao/react-svg-arrow.git",
+  "bugs": "https://github.com/rtsao/react-svg-arrow/issues",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "budo demo.js"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "0.14.x - 15.x"
+  },
+  "devDependencies": {
+    "budo": "^8.2.1",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
+  },
+  "license": "MIT"
+}
