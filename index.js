@@ -4,7 +4,6 @@ var React = require('react');
 
 var svg = React.DOM.svg;
 var path = React.DOM.path;
-var circle = React.DOM.circle;
 
 var ROOT_2 = Math.sqrt(2);
 
@@ -21,7 +20,7 @@ function Arrow(props) {
   var primaryStart = mirror ? primary : 0;
   var primaryEnd = mirror ? halfBorderDiagonal : primary - halfBorderDiagonal;
 
-  var secondaryStart = borderDiagonal / 2;
+  var secondaryStart = halfBorderDiagonal;
   var secondaryMiddle = secondary / 2;
   var secondaryEnd = secondary - halfBorderDiagonal;
 
