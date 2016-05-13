@@ -13,16 +13,17 @@ function Arrow(props) {
   var mirror = props.direction === 'left' || props.direction === 'top';
 
   var borderDiagonal = props.borderWidth * ROOT_2;
+  var halfBorderDiagonal = borderDiagonal / 2;
 
   var secondary = 2 * props.size + 2 * borderDiagonal;
   var primary = props.size + borderDiagonal;
 
   var primaryStart = mirror ? primary : 0;
-  var primaryEnd = mirror ? borderDiagonal / 2 : primary - borderDiagonal / 2;
+  var primaryEnd = mirror ? halfBorderDiagonal : primary - halfBorderDiagonal;
 
   var secondaryStart = borderDiagonal / 2;
   var secondaryMiddle = secondary / 2;
-  var secondaryEnd = secondary - borderDiagonal / 2;
+  var secondaryEnd = secondary - halfBorderDiagonal;
 
   var pathData = landscape ? [
     'M', secondaryStart, primaryStart,
