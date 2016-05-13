@@ -10,7 +10,8 @@ const Arrow = require('react-svg-arrow');
 const App = () => (
   React.createElement(Arrow, {
     size: 25,
-    color: 'red'
+    color: 'red',
+    direction: 'right',
     borderWidth: 5,
     borderColor: 'blue'
   })
