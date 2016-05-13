@@ -9,7 +9,7 @@
   "bugs": "https://github.com/rtsao/react-svg-arrow/issues",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "budo demo.js"
+    "start": "budo demo.js"
   },
   "dependencies": {},
   "peerDependencies": {

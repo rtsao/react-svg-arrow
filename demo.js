@@ -13,9 +13,10 @@ function App() {
       div({style: {background: 'lightgray', display: 'flex'}},
         React.createElement(Arrow, {
           color: 'blue',
-          borderWidth: 5,
+          borderWidth: 50,
           borderColor: 'red',
-          size: 25
+          size: 250,
+          direction: 'top'
         })
       )
     )
