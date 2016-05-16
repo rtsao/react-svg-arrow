@@ -39,6 +39,7 @@ function Arrow(props) {
       xmlns: 'http://www.w3.org/svg/2000',
       width: landscape ? secondary : primary,
       height: landscape ? primary : secondary,
+      style: props.style
     },
       path({
         d: pathData.join(' '),
@@ -57,6 +58,7 @@ Arrow.propTypes = {
   direction: React.PropTypes.oneOf(['top', 'right', 'bottom', 'left']).isRequired,
   borderWidth: React.PropTypes.number,
   borderColor: React.PropTypes.string,
+  style: React.PropTypes.object
 };
 
 Arrow.defaultProps = {
