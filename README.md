@@ -1,6 +1,8 @@
 # react-svg-arrow
 A React component for tooltip and popover arrows
 
+[![npm version][npm-badge]][npm-href]
+
 ### Usage
 
 ```js
@@ -29,3 +31,6 @@ Creating arrows with borders in HTML/CSS is a pain.
 * No clipping hacks
 * No transform/rotation hacks
 * Just a plain SVG element with a single path
+
+[npm-badge]: https://badge.fury.io/js/react-svg-arrow.svg
+[npm-href]: https://www.npmjs.com/package/react-svg-arrow
