@@ -1,6 +1,8 @@
 'use strict';
 
 var React = require('react');
+var PropTypes = require('prop-types');
+
 
 var svg = React.DOM.svg;
 var path = React.DOM.path;
@@ -54,13 +56,13 @@ function Arrow(props) {
 }
 
 Arrow.propTypes = {
-  color: React.PropTypes.string.isRequired,
-  size: React.PropTypes.number.isRequired,
-  direction: React.PropTypes.oneOf(['top', 'right', 'bottom', 'left']).isRequired,
-  borderWidth: React.PropTypes.number,
-  borderColor: React.PropTypes.string,
-  style: React.PropTypes.object,
-  className: React.PropTypes.string
+  color: PropTypes.string.isRequired,
+  size: PropTypes.number.isRequired,
+  direction: PropTypes.oneOf(['top', 'right', 'bottom', 'left']).isRequired,
+  borderWidth: PropTypes.number,
+  borderColor: PropTypes.string,
+  style: PropTypes.object,
+  className: PropTypes.string
 };
 
 Arrow.defaultProps = {
