@@ -3,10 +3,6 @@
 var React = require('react');
 var PropTypes = require('prop-types');
 
-
-var svg = React.DOM.svg;
-var path = React.DOM.path;
-
 var ROOT_2 = Math.sqrt(2);
 
 function Arrow(props) {
@@ -37,14 +33,14 @@ function Arrow(props) {
   ];
 
   return (
-    svg({
+    React.createElement('svg', {
       xmlns: 'http://www.w3.org/svg/2000',
       width: landscape ? secondary : primary,
       height: landscape ? primary : secondary,
       style: props.style,
       className: props.className
     },
-      path({
+      React.createElement('path', {
         d: pathData.join(' '),
         fill: props.color,
         stroke: props.borderColor,

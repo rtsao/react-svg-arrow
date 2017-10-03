@@ -5,12 +5,10 @@ var Arrow = require('./');
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var div = React.DOM.div;
-
 function App() {
   return (
-    div({style: {display: 'flex', alignItems: 'center', justifyContent: 'center'}},
-      div({style: {background: 'lightgray', display: 'flex'}},
+    React.createElement('div', {style: {display: 'flex', alignItems: 'center', justifyContent: 'center'}},
+      React.createElement('div', {style: {background: 'lightgray', display: 'flex'}},
         React.createElement(Arrow, {
           color: 'blue',
           borderWidth: 50,

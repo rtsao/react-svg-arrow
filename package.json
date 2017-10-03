@@ -1,6 +1,6 @@
 {
   "name": "react-svg-arrow",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "A React component for tooltip and popover arrows",
   "author": "Ryan Tsao <ryan.j.tsao@gmail.com>",
   "main": "index.js",
@@ -15,7 +15,7 @@
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
-    "react": "0.14.x - 15.x"
+    "react": "0.14.x - 16.x"
   },
   "devDependencies": {
     "budo": "^8.2.1",
